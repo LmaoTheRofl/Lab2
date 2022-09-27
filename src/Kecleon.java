@@ -1,23 +1,14 @@
 import ru.ifmo.se.pokemon.Pokemon;
+import ru.ifmo.se.pokemon.Stat;
 
 public class Kecleon extends Pokemon {
     String name;
-    int lvl;
-    int HP;
-    int ATTACK;
-    int DEFENSE;
-    int SPEED;
-    int SPECIAL_ATTACK;
-    int SPECIAL_DEFENSE;
-    public Kecleon (String name, int lvl, int HP, int ATTACK, int DEFENSE, int SPEED, int SPECIAL_ATTACK, int SPECIAL_DEFENSE){
+    int level;
+    double[] base;
+    public Kecleon (String name, int level) {
+        this.base = new double[Stat.values().length];
         this.name = name;
-        this.lvl = lvl;
-        this.HP = HP;
-        this.ATTACK = ATTACK;
-        this.DEFENSE = DEFENSE;
-        this.SPEED = SPEED;
-        this.SPECIAL_ATTACK = SPECIAL_ATTACK;
-        this.SPECIAL_DEFENSE = SPECIAL_DEFENSE;
+        this.level = level;
     }
 }
    // int HP, int ATTACK, int DEFENSE, int SPEED, int SPECIAL_ATTACK, int SPECIAL_DEFENSE
