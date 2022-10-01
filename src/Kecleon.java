@@ -1,12 +1,14 @@
 import ru.ifmo.se.pokemon.Pokemon;
-import ru.ifmo.se.pokemon.Stat;
+import ru.ifmo.se.pokemon.Type;
 
 public class Kecleon extends Pokemon {
     String name;
     int level;
-    double[] base;
     public Kecleon (String name, int level) {
-        this.base = new double[Stat.values().length];
+        super(name, level);
+        setStats(60.0, 90.0, 70.0, 60.0, 120.0, 40.0);
+        setType(Type.NORMAL);
+        //addMove();
         this.name = name;
         this.level = level;
 
