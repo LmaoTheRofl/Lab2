@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
 
     Battle b = new Battle();
-    Kecleon p1 = new Kecleon("Чужой", 1);
+    Heatran p1 = new Heatran("Чужой", 1);
     Pokemon p2 = new Pokemon("Хищник", 1);
         System.out.println(p1.getStat(Stat.HP));
 b.addAlly(p1);
