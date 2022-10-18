@@ -17,6 +17,6 @@ public class RestTyrogue extends StatusMove{
     @Override
     protected String describe(){
 
-        return "использует Rest";
+        return "использует RestTyrogue";
     }
 }

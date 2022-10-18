@@ -18,6 +18,6 @@ public class RestHitmontop extends StatusMove{
     @Override
     protected String describe(){
 
-        return "использует Rest";
+        return "использует RestHitmontop";
     }
 }
