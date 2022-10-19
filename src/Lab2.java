@@ -6,10 +6,10 @@ public class Lab2 {
 
     Battle b = new Battle();
     Heatran p1 = new Heatran("Гном", 1);
-    Tyrogue p2 = new Tyrogue("Никитка", 1);
+    Tyrogue p2 = new Tyrogue("Кархтавый", 1);
     Hitmontop p3 = new Hitmontop("Гоша", 1);
     Poliwag p4 = new Poliwag("Семён", 1);
-    Poliwhirl p5 = new Poliwhirl("Кархтавый", 1);
+    Poliwhirl p5 = new Poliwhirl("Никитка", 1);
     Politoed p6 = new Politoed("Антон", 1);
 
         System.out.println(p1.getStat(Stat.HP));
