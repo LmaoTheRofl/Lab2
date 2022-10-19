@@ -3,7 +3,7 @@ import ru.ifmo.se.pokemon.*;
 public class RockTomb extends PhysicalMove{
     public RockTomb(){
 
-        super(Type.ROCK, 65, 95);
+        super(Type.ROCK, 65, 0.95);
     }
     @Override
     protected void applyOppEffects(Pokemon p){

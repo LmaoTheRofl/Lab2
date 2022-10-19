@@ -3,7 +3,7 @@ import ru.ifmo.se.pokemon.*;
 public class ScaryFace extends StatusMove{
     public ScaryFace(){
 
-        super(Type.NORMAL, 0.0, 100.0);
+        super(Type.NORMAL, 0.0, 1.00);
     }
     @Override
     protected void applyOppEffects(Pokemon p){

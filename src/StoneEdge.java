@@ -3,7 +3,7 @@ import ru.ifmo.se.pokemon.*;
 public class StoneEdge extends PhysicalMove{
     public StoneEdge(){
 
-        super(Type.ROCK, 100.0, 80.0);
+        super(Type.ROCK, 100.0, 0.80);
     }
     @Override
     protected double calcCriticalHit(Pokemon p1, Pokemon p2){
