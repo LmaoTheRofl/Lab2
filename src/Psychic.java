@@ -3,7 +3,7 @@ import ru.ifmo.se.pokemon.*;
 public class Psychic extends SpecialMove{
     public Psychic(){
 
-        super(Type.PSYCHIC, 90.0, 1.00);
+        super(Type.PSYCHIC, 90.0, 100.0);
     }
     @Override
     protected void applyOppEffects(Pokemon p){

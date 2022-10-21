@@ -5,7 +5,7 @@ public class Lab2 {
     public static void main(String[] args) {
 
     Battle b = new Battle();
-    Heatran p1 = new Heatran("Гном", 1);
+    Heatran p1 = new Heatran("Эдвард", 1);
     Tyrogue p2 = new Tyrogue("Кархтавый", 1);
     Hitmontop p3 = new Hitmontop("Гоша", 1);
     Poliwag p4 = new Poliwag("Семён", 1);
