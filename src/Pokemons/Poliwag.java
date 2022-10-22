@@ -1,3 +1,7 @@
+package Pokemons;
+
+import Moves.Psychic;
+import Moves.Scald;
 import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.Type;
 

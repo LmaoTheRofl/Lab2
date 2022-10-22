@@ -1,3 +1,9 @@
+package Pokemons;
+
+import Moves.DoubleTeam;
+import Moves.FireBlast;
+import Moves.RockTomb;
+import Moves.ScaryFace;
 import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.Type;
 

@@ -1,3 +1,8 @@
+package Pokemons;
+
+import Moves.Confide;
+import Moves.LowSweep;
+import Moves.RestTyrogue;
 import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.Type;
 

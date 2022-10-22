@@ -1,14 +1,17 @@
+package Moves;
+
 import ru.ifmo.se.pokemon.*;
 
-public class RestTyrogue extends StatusMove{
-    public RestTyrogue(){
+public class RestHitmontop extends StatusMove{
+    public  RestHitmontop(){
+
         super(Type.PSYCHIC, 0.0, 0.0);
     }
     @Override
     protected void applySelfEffects(Pokemon p){
         Effect effect = (new Effect()).condition(Status.SLEEP).turns(2);
         p.setCondition(effect);
-        p.setStats(35.0, p.getStat(Stat.ATTACK),
+        p.setStats(50.0, p.getStat(Stat.ATTACK),
                 p.getStat(Stat.DEFENSE),
                 p.getStat(Stat.SPECIAL_ATTACK),
                 p.getStat(Stat.SPECIAL_DEFENSE),
@@ -17,6 +20,6 @@ public class RestTyrogue extends StatusMove{
     @Override
     protected String describe(){
 
-        return "использует RestTyrogue";
+        return "использует RestHitmontop";
     }
 }

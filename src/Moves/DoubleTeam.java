@@ -1,3 +1,5 @@
+package Moves;
+
 import ru.ifmo.se.pokemon.*;
 
 public class DoubleTeam extends StatusMove{

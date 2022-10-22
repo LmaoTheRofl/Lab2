@@ -1,15 +1,20 @@
+package Moves;
+
 import ru.ifmo.se.pokemon.*;
 
-public class LowSweep extends PhysicalMove{
-    public LowSweep(){
-        super(Type.FIGHTING, 65.0, 100.0);
+public class RockTomb extends PhysicalMove{
+    public RockTomb(){
+
+        super(Type.ROCK, 65, 95.0);
     }
     @Override
     protected void applyOppEffects(Pokemon p){
+
         p.setMod(Stat.SPEED, -1);
     }
     @Override
     protected String describe(){
-        return "использует LowSweep";
+
+        return "использует RockTomb";
     }
 }

@@ -1,3 +1,9 @@
+package Pokemons;
+
+import Moves.Confide;
+import Moves.LowSweep;
+import Moves.RestHitmontop;
+import Moves.StoneEdge;
 import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.Type;
 
