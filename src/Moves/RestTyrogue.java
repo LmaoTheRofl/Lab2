@@ -4,7 +4,7 @@ import ru.ifmo.se.pokemon.*;
 
 public class RestTyrogue extends StatusMove{
     public RestTyrogue(){
-        super(Type.PSYCHIC, 0.0, 0.0);
+        super(Type.PSYCHIC, 0.0, 100.0);
     }
     @Override
     protected void applySelfEffects(Pokemon p){
