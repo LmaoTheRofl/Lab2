@@ -7,7 +7,7 @@ import Moves.WaterGun;
 import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.Type;
 
-public class Politoed extends Pokemon {
+public class Politoed extends Poliwhirl {
 
     public Politoed(String name, int level) {
         super(name, level);

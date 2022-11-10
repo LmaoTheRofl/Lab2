@@ -6,7 +6,7 @@ import Moves.WaterGun;
 import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.Type;
 
-public class Poliwhirl extends Pokemon {
+public class Poliwhirl extends Poliwag {
 
     public Poliwhirl(String name, int level) {
         super(name, level);
