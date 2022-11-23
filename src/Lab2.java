@@ -9,19 +9,13 @@ import java.util.stream.IntStream;
 
 public class Lab2 {
     public static void main(String[] args) {
-
-        Random random = new Random();
-        int randomCount = (random.nextInt(4) + 2) * 2;
-        System.out.println(randomCount);
         Battle b = new Battle();
         AtomicReference<Integer> addedToAlly = new AtomicReference<>(0);
         AtomicReference<Integer> addedToFoe = new AtomicReference<>(0);
-        IntStream.range(0, randomCount)
-                .mapToObj(i -> getRandomPokemon())
-                .collect(Collectors.toList())
+        Arrays.asList(new Heatran("Эдвард", 1), new Tyrogue("Кархтавый", 1), new Hitmontop("Никитка", 1), new Poliwag( "Гоша", 1), new Poliwhirl("Петька", 1), new Politoed("Семён", 1))
                 .forEach(p -> {
                     if (Math.random() > 0.5) {
-                        if (addedToAlly.get() >= randomCount / 2) {
+                        if (addedToAlly.get() >= 3 ) {
                             b.addFoe(p);
                             System.out.println(p + " to foe");
                         } else {
@@ -30,7 +24,7 @@ public class Lab2 {
                             System.out.println(p + " to ally");
                         }
                     } else {
-                        if (addedToFoe.get() >= randomCount / 2) {
+                        if (addedToFoe.get() >= 3) {
                             b.addAlly(p);
                             System.out.println(p + " to ally");
                         } else {
@@ -41,20 +35,5 @@ public class Lab2 {
                     }
                 });
         b.go();
-    }
-
-    private static String getRandomName() {
-        return Arrays.asList("Эдвард", "Кархтавый", "Никитка", "Гоша", "Петька", "Семён").get((int) (Math.random() * 5));
-    }
-
-    private static Pokemon getRandomPokemon() {
-        return Arrays.asList(
-                new Heatran(getRandomName(), 1),
-                new Tyrogue(getRandomName(), 1),
-                new Hitmontop(getRandomName(), 1),
-                new Poliwag(getRandomName(), 1),
-                new Poliwhirl(getRandomName(), 1),
-                new Politoed(getRandomName(), 1)
-        ).get((int) (Math.random() * 5));
     }
 }
